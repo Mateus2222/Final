@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Prova Final - Linguagens de Marcação</title>
+    <style>
+        header, footer{
+            display: block;
+        }
+        header{
+            /* Alterar altura para 160px */
+            height: 160px;
+        }
+        main{
+            /* Colocar um container layout em grid */
+            display: grid;
+            /* O container layout em grid deve ter duas colunas */
+            grid-template-columns: repeat(2, 1fr);
+            /* Deve ter uma lacuna de 20px entre os itens do grid layout */
+            gap: 20px 20px;
+        }
+        main > section{
+            /* Cor de plano de fundo deve ser rgb(230, 230, 230) */
+            background-color: rgb(230,230,230)
+        }
+
+        /* Ajuste o código @media para que seja aplicada responsividade com uma resolução de tela de largura máxima de 600px */
+        @media screen and (max-width:600px) {
+            main{
+                /* Código para redefinir que o container grid da tag main tenha apenas uma coluna */
+                grid-template-columns: 1fr;
+            }
+        }
+
+        header > h1{
+            border: 1px solid black;
+            width: 400px;
+            margin: 0 auto;
+            text-align: center;
+            /* Ativar a animação move_h1, com duração de 4s, linear e infinita */
+            animation-name: move_h1;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes move_h1{
+            from, to{
+                /* Translação de 0 nos eixos x e y */
+                transform: translateX(0) translateY(0);
+
+            }
+
+            50%{
+                /* Translação de +50px no eixo y e um redimensionamento de tamanho (scale) de 1.2 */
+                transform: translateX(0) translateY(50px);
+                scale: 1.2em;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Prova Final - Linguagens de Marcação</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Parte 1</h2>
+            <p>Texto da parte 1 do conteúdo da disciplina de Linguagens de Marcação.
+                Texto da parte 1 do conteúdo da disciplina de Linguagens de Marcação.
+                Texto da parte 1 do conteúdo da disciplina de Linguagens de Marcação.
+                Texto da parte 1 do conteúdo da disciplina de Linguagens de Marcação.
+                Texto da parte 1 do conteúdo da disciplina de Linguagens de Marcação.
+            </p>
+        </section>
+        <section>
+            <h2>Parte 2</h2>
+            <p>Texto da parte 1 do conteúdo da disciplina de Linguagens de Marcação.
+                Texto da parte 1 do conteúdo da disciplina de Linguagens de Marcação.
+                Texto da parte 1 do conteúdo da disciplina de Linguagens de Marcação.
+                Texto da parte 1 do conteúdo da disciplina de Linguagens de Marcação.
+                Texto da parte 1 do conteúdo da disciplina de Linguagens de Marcação.
+            </p>
+        </section>
+        <section>
+            <h2>Parte 3</h2>
+            <p>Texto da parte 1 do conteúdo da disciplina de Linguagens de Marcação.
+                Texto da parte 1 do conteúdo da disciplina de Linguagens de Marcação.
+                Texto da parte 1 do conteúdo da disciplina de Linguagens de Marcação.
+                Texto da parte 1 do conteúdo da disciplina de Linguagens de Marcação.
+                Texto da parte 1 do conteúdo da disciplina de Linguagens de Marcação.
+            </p>
+        </section>
+        <section>
+            <h2>Parte 4</h2>
+            <p>Texto da parte 1 do conteúdo da disciplina de Linguagens de Marcação.
+                Texto da parte 1 do conteúdo da disciplina de Linguagens de Marcação.
+                Texto da parte 1 do conteúdo da disciplina de Linguagens de Marcação.
+                Texto da parte 1 do conteúdo da disciplina de Linguagens de Marcação.
+                Texto da parte 1 do conteúdo da disciplina de Linguagens de Marcação.
+            </p>
+        </section>
+        <section>
+            <h2>Formulário</h2>
+            <form action="" method="POST" autocomplete="off">
+                <fieldset>
+                    <label for="name">Nome completo: </label>
+                    <input id="name" name="name" type="text" placeholder="Nome Completo">
+                    <br>
+                    <br>
+                    <label for="matricula">Matrícula: </label>
+                    <input id="matricula" name="matricula" type="number" placeholder="Matrícula">
+                    <br>
+                    <br>
+                    <label for="login">Login: </label>
+                    <input id="login" name="login" type="text" placeholder="Login">
+                    <br>
+                    <br>
+                    <label for="senha">Senha: </label>
+                    <input id="senha" name="senha" type="password" placeholder="Senha">
+                    <br>
+                    <br>
+                    <input value="Salvar!" type="submit">
+                    <input value="Limpar!" type="reset">
+                </fieldset>
+                <!-- Adicionar os campos do formulário -->
+                <!-- Um campo para o nome completo, com placeholder 'Nome completo', e tipo do campo 'text' -->
+                <!-- Um campo para a matrícula, com placeholder 'Matrícula', e que só aceite números -->
+                <!-- Um campo para o login, com placeholder 'Login', e tipo do campo 'text' -->
+                <!-- Um campo para a senha, com placeholder 'Senha', e tipo do campo 'password' -->
+                <!-- Dois botões: um do tipo submit (rótulo Salvar!) e outro do tipo reset (rótulo Limpar!) -->
+            </form>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
